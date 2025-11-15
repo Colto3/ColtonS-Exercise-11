@@ -12,13 +12,14 @@
   />
 
   <style>
+  #exampleSection { min-height: 200px; }
   </style>
 </head>
 
 <body>
 
   <!-- ========================== -->
-  <!--        NAVIGATION BAR       -->
+  <!--        NAVIGATION BAR      -->
   <!-- ========================== -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -56,6 +57,39 @@
     </div>
   </nav>
 
+  <!-- ========================== -->
+  <!--      PAGE CONTENT AREA     -->
+  <!-- ========================== -->
+
+  <div class="container mt-5">
+    <h1 class="mb-4">Bootstrap Grid Examples</h1>
+    <p class="text-muted">
+      Click a button below to load the grid example into the preview section.
+    </p>
+
+    <!-- Buttons to load examples -->
+    <div class="mb-4">
+      <button id="loadEven" class="btn btn-primary me-2">Load Even Grid</button>
+      <button id="loadSimple" class="btn btn-secondary me-2">Load Simple Uneven Grid</button>
+      <button id="loadUneven" class="btn btn-success me-2">Load Uneven Grid</button>
+      <button id="loadComplex" class="btn btn-danger">Load Complex Grid</button>
+    </div>
+
+    <!-- JavaScript loads the examples -->
+    <section id="exampleSection" class="border p-4 bg-light rounded">
+      <p class="text-muted">Example preview will appear here...</p>
+    </section>
+  </div>
+
+  <!-- ========================== -->
+  <!--        JAVASCRIPT          -->
+  <!-- ========================== -->
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
